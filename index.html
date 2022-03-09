@@ -5,6 +5,7 @@
     <title>Formulario</title>
   </head>
   <body>
+    <!-- Start categoria com select -->
     <div>
       <label for="categoria">Categorias:</label>
       <select name="categoria" id="categoria">
@@ -12,29 +13,52 @@
         <option value="Manager">Gerente</option>
         <option value="Employee" selected>Funcionário</option>
       </select>
-      <div style="margin-top: 15px;">
-        <label for="cores">
-            Selecione suas cores preferidas:
-        </label>
+      <!-- Start cores -->
+      <div style="margin-top: 15px">
+        <label> Selecione suas cores preferidas: </label>
 
-        <br>
-        <input type="checkbox" name="blue" id="blue">
-        <label for="cores">
-            Azul
-        </label>
-        <br>
-        <input type="checkbox" name="green" id="green">
-        <label for="cores">
-            Verde
-        </label>
-        <br>
-        <input type="checkbox" name="red" id="red">
-        <label for="cores">
-            Vermelho
-        </label>
-        
+        <br />
+        <input type="checkbox" name="blue" id="blue" />
+        <label for="cores"> Azul </label>
+        <br />
+        <input type="checkbox" name="green" id="green" />
+        <label for="cores"> Verde </label>
+        <br />
+        <input type="checkbox" name="red" id="red" />
+        <label for="cores"> Vermelho </label>
+        <!-- End cores -->
       </div>
 
+      <!-- Start Secsu -->
+      <div style="margin-top: 15px">
+        <label> Secsu </label>
+
+        <br />
+        <input type="radio" name="sexo" id="sexo_m" value="m" />
+        <label for="sexo_m"> Masculino </label>
+        <br />
+        <input type="radio" name="sexo" id="sexo_f" value="f" />
+        <label for="sexo_f"> Feminino </label>
+        <!-- Start Secsu -->
+      </div>
+
+      <!-- Start coment -->
+      <div style="margin-top: 15px">
+        <label for="comentarios"> Comentarios </label>
+
+        <br/>
+        <textarea 
+        name=comentarios
+        id="comentarios"
+        cols="50"
+        rows="4"
+        style="resize: none"
+        >
+            
+        </textarea>
+        <!-- End coment -->
+      </div>
+      <!-- End categoria -->
     </div>
   </body>
 </html>
