@@ -5,73 +5,96 @@
     <title>Formulario</title>
   </head>
   <body>
-    <!-- Start categoria com select -->
-    <div>
-      <label for="categoria">Categorias:</label>
-      <select name="categoria" id="categoria">
-        <option value="Admin">Administrador</option>
-        <option value="Manager">Gerente</option>
-        <option value="Employee" selected>Funcionário</option>
-      </select>
-      <!-- Start cores -->
-      <div style="margin-top: 15px">
-        <label> Selecione suas cores preferidas: </label>
-
+    <!-- Start form -->
+    <form action="">
+        <!-- Start name -->
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="50" required/> 
+        </div>
+        <!-- End name -->
+        <!-- Start email -->
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" size="50" required/> 
+        </div>
+        <!-- End email -->
+        <!-- Start idade -->
+        <div>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" size="10" required/> 
+        </div>
+        <!-- End idade -->
         <br />
-        <input type="checkbox" name="blue" id="blue" />
-        <label for="cores"> Azul </label>
-        <br />
-        <input type="checkbox" name="green" id="green" />
-        <label for="cores"> Verde </label>
-        <br />
-        <input type="checkbox" name="red" id="red" />
-        <label for="cores"> Vermelho </label>
-        <!-- End cores -->
-      </div>
-
-      <!-- Start Secsu -->
-      <div style="margin-top: 15px">
-        <label> Secsu </label>
-
-        <br />
-        <input type="radio" name="sexo" id="sexo_m" value="m" />
-        <label for="sexo_m"> Masculino </label>
-        <br />
-        <input type="radio" name="sexo" id="sexo_f" value="f" />
-        <label for="sexo_f"> Feminino </label>
-      </div>
-      <!-- End Secsu -->
-
-      <!-- Start coment -->
-      <div style="margin-top: 15px">
-        <label for="comentarios"> Comentarios </label>
-
-        <br/>
-        <textarea 
-        name=comentarios
-        id="comentarios"
-        cols="50"
-        rows="4"
-        style="resize: none"
-        >
-            
-        </textarea>
-        
-      </div>
-      <!-- End coment -->
-        
-      <!-- Start buttom sumit Enviar -->
+      <!-- Start categoria com select -->
       <div>
-        <input type="submit" value="Enviar" />
-      </div>
-      <!-- End buttom submit Enviar -->
+        <label for="categoria">Categorias:</label>
+        <select name="categoria" id="categoria">
+          <option value="Admin">Administrador</option>
+          <option value="Manager">Gerente</option>
+          <option value="Employee" selected>Funcionário</option>
+        </select>
+        <!-- Start cores -->
+        <div style="margin-top: 15px">
+          <label>Selecione suas cores preferidas:</label>
 
-      <!-- Start buttom submit Comprar -->
-      <div>
-          <button type="submit" name="btn_limpar" value="comprar">Comprar</button>
+          <br />
+          <input type="checkbox" name="blue" id="blue" />
+          <label for="cores"> Azul </label>
+          <br />
+          <input type="checkbox" name="green" id="green" />
+          <label for="cores"> Verde </label>
+          <br />
+          <input type="checkbox" name="red" id="red" />
+          <label for="cores"> Vermelho </label>
+          <!-- End cores -->
+        </div>
+
+        <!-- Start Secsu -->
+        <div style="margin-top: 15px">
+          <label>Secsu:</label>
+
+          <br />
+          <input type="radio" name="sexo" id="sexo_m" value="m" />
+          <label for="sexo_m"> Masculino </label>
+          <br />
+          <input type="radio" name="sexo" id="sexo_f" value="f" />
+          <label for="sexo_f"> Feminino </label>
+        </div>
+        <!-- End Secsu -->
+
+        <!-- Start coment -->
+        <div style="margin-top: 15px">
+          <label for="comentarios">Comentarios:</label>
+
+          <br />
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            cols="50"
+            rows="4"
+            style="resize: none"
+          >
+          </textarea>
+        </div>
+        <!-- End coment -->
+
+        <!-- Start buttom sumit Enviar -->
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+        <!-- End buttom submit Enviar -->
+
+        <!-- Start buttom submit Comprar -->
+        <div>
+          <button type="submit" name="btn_limpar" value="comprar">
+            Comprar
+          </button>
+        </div>
+        <!-- End buttom submit Comprar -->
       </div>
-      <!-- End buttom submit Comprar -->
-    </div>
-    <!-- End categoria -->
+      <!-- End categoria -->
+    </form>
+    <!-- End form -->
   </body>
 </html>
